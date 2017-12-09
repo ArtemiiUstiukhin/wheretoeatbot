@@ -43,7 +43,7 @@ def send_place(message):
     bot.send_location(message.chat.id, '59.9606151', '30.3061886')
     place = (59.9606151,30.3061886)
     client = (message.location.longitude,message.location.latitude)
-    distance = compute_distance(place,client)
+    distance = count_distance(place,client)
     # url = 'http://makeitreal.studio/telegram/get.php'
     # response = requests.get(url)
     # bot.send_message(message.chat.id, response.text)
