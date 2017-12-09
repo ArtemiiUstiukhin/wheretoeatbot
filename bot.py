@@ -43,15 +43,12 @@ def send_place(message):
     bot.send_location(message.chat.id, '59.9606151', '30.3061886')
     place = (59.9606151,30.3061886)
     client = (message.location.longitude,message.location.latitude)
-    distance = count_distance(place,client)
+    distance = compute_distance(place,client)
     # url = 'http://makeitreal.studio/telegram/get.php'
     # response = requests.get(url)
     # bot.send_message(message.chat.id, response.text)
     
-# Функция расстояния    
-def count_distance(My_latitude, My_longtitude, Place_latitude, Place_longtitude):
-    return Math.sqrt(Math.Pow(My_latitude-Place_latitude,2)+Math.Pow(My_longtitude-Place_longtitude,2));
-    
+
 
 if __name__ == '__main__':
      bot.polling(none_stop=True)
