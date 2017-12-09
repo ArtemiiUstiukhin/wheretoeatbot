@@ -48,7 +48,10 @@ def send_place(message):
     # response = requests.get(url)
     # bot.send_message(message.chat.id, response.text)
     
-
+# Функция расстояния    
+def count_distance(My_latitude, My_longtitude, Place_latitude, Place_longtitude):
+    return Math.sqrt(Math.Pow(My_latitude-Place_latitude,2)+Math.Pow(My_longtitude-Place_longtitude,2));
+    
 
 if __name__ == '__main__':
      bot.polling(none_stop=True)
