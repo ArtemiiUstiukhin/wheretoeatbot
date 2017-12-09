@@ -42,7 +42,7 @@ def send_place(message):
     bot.send_message(message.chat.id, message.location)
     bot.send_location(message.chat.id, '59.9606151', '30.3061886')
 
-     bot.send_message(message.chat.id, count_distance(59.9606151,30.3061886,message.location.longitude,message.location.latitude))
+     bot.send_message(message.chat.id, count_distance(59.9606151,30.3061886,message.location.latitude,message.location.longitude))
 #     place = (59.9606151,30.3061886)
 #     client = (message.location.longitude,message.location.latitude)
 #     print(client)
