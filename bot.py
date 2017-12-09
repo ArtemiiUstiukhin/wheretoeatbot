@@ -31,9 +31,9 @@ def test_connection(message):
     cur.close()
 
 # Бот будет отвечать только на текстовые сообщения
-# @bot.message_handler(content_types=['text'])
-# def echo(message):
-    # bot.send_message(message.chat.id, 'Денис любит ' + message.text)
+@bot.message_handler(content_types=['text'])
+def echo(message):
+    bot.send_message(message.chat.id, 'Юля любит ' + message.text)
 
 @bot.message_handler(content_types=['location'])
 def send_place(message):
